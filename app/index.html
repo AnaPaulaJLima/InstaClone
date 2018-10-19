@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css.css" rel="stylesheet">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>InstaClone</title>
+</head>
+<body>
+
+  <div class="bg-padrao">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-6 col-md-6 d-flex justify-content-end">
+          <div class="banner-background">
+            <img *ngFor="let imagem of imagens" [src]="imagem.url" [@banner]="imagem.estado"/>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 d-flex justify-content-start">
+          <div class="row">
+
+            <div class="col-sm-12">
+              <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                  <div class="card-title"></div>
+                  <form>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" placeholder="Senha">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm btn-block">Entrar</button>
+                  </form>
+                  <hr />
+                  <p class="small text-danger text-center">O nome de usuário inserido não pertence a uma conta. Verifique seu nome de usuário e tente novamente.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                  <p class="card-text">Não tem uma conta? <a href="#" class="card-link">Cadastre-se</a></p> 
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <!-- Pacotes necessarios para Boostrap -->
+  <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
+  <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
