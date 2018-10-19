@@ -2,6 +2,11 @@
   "dependencies": {
     "bootstrap": "4.1.3",
     "jquery": "^3.3.1",
+    "live-server": "^1.2.0",
     "popper.js": "^1.14.4"
+  },
+  "name": "meu-pacote",
+  "scripts": {
+    "server": "live-server --open=/app/index.html"
   }
 }

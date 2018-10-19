@@ -9,4 +9,8 @@ Na pasta do projeto executar o comando:
 cd InstaClone/
 yarn install
 
-Aguardar baixar as dependencias e pronto !!!
+Aguardar baixar as dependencias, executar comando:
+
+yarn server
+
+Pronto !!!
